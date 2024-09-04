@@ -1,0 +1,56 @@
+.form {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.title {
+  margin-bottom: var(--sp-24);
+  font-size: 26px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.inputBlock {
+  margin-bottom: 16px;
+  display: grid;
+
+  h3 {
+    margin-bottom: 2px;
+    font-size: var(--sp-16);
+  }
+
+  input {
+    grid-area: 2 / 1 / 3 / -1;
+  }
+}
+
+.buttonShowPassword {
+  grid-area: 2 / 1 / 3 / -1;
+  justify-self: end;
+  width: 40px;
+  border-radius: 8px;
+
+  svg {
+    margin: 0 auto;
+    color: var(--c-black-500);
+  }
+
+  &:not(.passwordIsHidden) svg path:last-of-type {
+    display: none;
+  }
+
+  &.passwordIsHidden svg path:first-of-type {
+    display: none;
+  }
+}
+
+.submitBtn {
+  width: 200px;
+}
