@@ -35,5 +35,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-  base: '/',
+  base: '/tables/',
 })
