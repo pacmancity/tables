@@ -19,8 +19,8 @@ export const App = () => {
   return (
     <Routes>
       <Route element={<Layout/>}>
-        <Route path="/" element={<Authorization/>}/>
-        <Route index path='/documents/' element={<Documents/>}/>
+        <Route path="/tables/" element={<Authorization/>}/>
+        <Route index path='/tables/documents/' element={<Documents/>}/>
         <Route path='/*' element={<NotFound/>}/>
       </Route>
     </Routes>
