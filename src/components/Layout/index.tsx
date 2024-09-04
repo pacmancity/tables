@@ -9,8 +9,8 @@ export const Layout = () => {
     <main>
       {isAuthenticated && <header className='container'>
         <nav className={style.nav}>
-          <Link to='/'>Авторизация</Link>
-          <Link to='/documents/'>Документы</Link>
+          <Link to='/tables/'>Авторизация</Link>
+          <Link to='/tables/documents/'>Документы</Link>
         </nav>
       </header>}
       <Outlet/>
